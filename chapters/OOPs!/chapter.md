@@ -77,7 +77,7 @@ Here's how you can write the class *.cpp file, the implementation file:
 Ball::Ball(){
 }
 
-Ball::setup(){
+void Ball::setup(){
     x = ofRandom(0, ofGetWidth());      // give some random positioning
     y = ofRandom(0, ofGetHeight());
     
@@ -216,10 +216,10 @@ We'll now use the CONSTANT value to define the size of our array of objects:
 ```cpp
 Ball myBall[NBALLS];
 ```
-
+// Does this go anywhere in the ofApp.h, between the two brackets?
 
 back to our implementation file we'll just need to create an array of objects and call their methods through 'for' loops.
-
+//what is the implementation file? Does this go in the 'Ball.cpp' or the 'ofApp.cpp' ?
 in the setup() function:
 
 ```cpp
